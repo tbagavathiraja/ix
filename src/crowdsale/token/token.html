@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TOKEN</title>
+    <script src="token.js"></script>
+</head>
+<body>
+<form>
+    Byte Code:<br>
+    <input type="text" id="bytecode" placeholder="byte code" > </input>
+    <br>
+    Interface:<br>
+    <input type="text" id="interface" placeholder="interface"> </input>
+    <br>
+
+    <input type="button"  value="Submit"onclick="createNewContract()">  </input>
+</form>
+<div>
+    <span class="marked"> Hashcode</span>
+    <p id="hashcode"> </p>
+</div>
+<div>
+    <span class="marked"> Contract Mine Address</span>
+    <p id="contract"> </p>
+</div>
+<form>
+    TRANSFER:
+    <input type="text" id="to" placeholder="to address">
+    <input type="text" id="value" placeholder="value">
+    <input type="button" value="submit" onclick="transfer()">
+</form>
+
+<form>
+    Transfer from:
+    <input type="text" id="transfer_from" placeholder="from address">
+    <input type="text" id="transfer_to" placeholder="to address">
+    <input type="text" id="transfer_value" placeholder="value">
+    <input type="button" value="submit" onclick="transferFrom()">
+</form>
+
+<form>
+    Return amount:
+    <input type="text" id="return_from" placeholder="from address">
+    <input type="text" id="return_to" placeholder="to address">
+    <input type="text" id="return_value" placeholder="value">
+    <input type="button" value="submit" onclick="returnAmount()">
+</form>
+
+<form>
+    Balanceof:
+    <input type="text" id="address" placeholder="address">
+    <input type="button" value="submit" onclick="balanceOf()">
+</form>
+
+<form>
+    Allowance:
+    <input type="text" id="allowance_owner" placeholder="owner">
+    <input type="text" id="allowance_to" placeholder="to">
+    <input type="button" value="submit" onclick="getAllowance()">
+</form>
+
+<form>
+    getOwner:
+    <input type="text" id="owner" placeholder="owner">
+    <input type="button" value="submit" onclick="getOwner()">
+</form>
+
+<form>
+    approve:
+    <input type="text" id="spender" placeholder="spender">
+    <input type="text" id="appr_value" placeholder="value">
+    <input type="button" value="submit" onclick="approve()">
+</form>
+
+<form>
+    approveAndCall:
+    <input type="text" id="approve_spender" placeholder="from spender">
+    <input type="text" id="approve_value" placeholder="value">
+    <input type="text" id="approve_data" placeholder="data">
+    <input type="button" value="submit" onclick="returnAmount()">
+</form>
+
+
+<form>
+    burn:
+    <input type="text" id="burn_value" placeholder="amount">
+    <input type="button" value="submit" onclick="burn()">
+</form>
+
+<form>
+    burnFrom:
+    <input type="text" id="burnfrom" placeholder="from address">
+    <input type="text" id="burnvalue" placeholder="value">
+    <input type="button" value="submit" onclick="burnFrom()">
+</form>
+
+
+</body>
+</html>

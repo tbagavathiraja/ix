@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>crowdsale</title>
+    <script src="crowdsale.js"></script>
+</head>
+<body>
+<form>
+    Byte Code:<br>
+    <input type="text" id="bytecode" placeholder="byte code" > </input>
+    <br>
+    Interface:<br>
+    <input type="text" id="interface" placeholder="interface"> </input>
+    <br>
+
+    <input type="button"  value="Submit"onclick="createNewContract()">  </input>
+</form>
+<div>
+    <span class="marked"> Hashcode</span>
+    <p id="hashcode"> </p>
+</div>
+<div>
+    <span class="marked"> Contract Mine Address</span>
+    <p id="contract"> </p>
+</div>
+<form>
+    checkGoalReached:
+    <input type="button" value="submit" onclick="checkGoalReached()">
+</form>
+<form>
+    safeWithdrawal:
+    <input type="button" value="submit" onclick="safeWithdrawal()">
+</form>
+
+<form>
+    Fallback:
+    <input type ="text" id="ether" placeholder="amount in ether">
+    <input type="button" value="submit" onclick="fallback()">
+</form>
+</body>
+</html>
